@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Lola Cow</title>
+  <link href='https://fonts.googleapis.com/css?family=Crafty Girls' rel='stylesheet'>
+  <link rel="stylesheet" href="./css/about.css">
+  </link>
+</head>
+
+<body>
+<div class="container">
+  <div class="container">
+    <audio autoplay loop id="song">
+      <source  src="./assets/sounds/TheCowSong.mp3" type="audio/mp3">
+  </audio>
+  
+  <img src="./assets/images/cute-cow-bg.png" id="songCow" onclick="playSong()">
+  <img id="imgCowAbout" src="./assets/images/b8d1f73927e376195b02d7352ad6613d.gif">
+    <div id='menu' class='menu'>
+      <div id='aboutText'>
+          <h1 class="aboutHeader">
+            Let's learn to play
+          </h1>
+          <ul>
+              <li>
+                Use the <i>Space Bar</i> to make LOLA jump over the stones and avoid it.
+            </li>
+              <li>
+                Remember to collect more than a 100 coin to win.
+            </li>
+          </ul>
+          <div>
+            <button id="newGameBtn2" class = 'menuBtn' onclick= "window.location = './menu.html';">Menu</button>
+            <button id="newGameBtn2" class = 'menuBtn' onclick="newGame()">Play !</button>
+          </div>
+
+      </div>
+
+    </div>
+</div>
+<script src="./js/menu.js"></script>
+</body>
+
+</html>

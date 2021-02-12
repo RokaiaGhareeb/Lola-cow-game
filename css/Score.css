@@ -1,0 +1,102 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  background-image: url("../assets/images/green-grass-isolated-white_87394-705-removebg-preview.png");
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-size: 40%;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 500px;
+    height: fit-content;
+    padding: 20px;
+    background-color: yellowgreen;
+    /* border-radius: 30px; */
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+  }
+  
+  .menuBtn {
+    background-color: yellowgreen;
+    width: fit-content;
+    height: 40px;
+    color: rgb(255, 250, 234);
+    font-size: 28px;
+    font-weight: bold;
+    border: 0;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    outline: none;
+    font-family: "Crafty Girls";
+    cursor: pointer;
+  }
+
+#highScore {
+  margin-top: 0px;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 0px;
+  margin-bottom: 0;
+  color: rgb(255, 250, 234);
+  font-family: "Crafty Girls";
+  font-size: 25px;
+}
+
+/* Score Table css */
+
+table {
+  font-family: "Crafty Girls";
+  border: 2px solid yellowgreen;
+  background-color: #fffaea;
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+td,
+th {
+  width: 220px;
+  border: 5px solid yellowgreen;
+  padding: 3px 2px;
+}
+tbody td {
+  font-size: 19px;
+  font-weight: bold;
+  color: rgb(92, 109, 59);
+}
+tr:nth-child(even) {
+  background: #fccdd0;
+}
+th {
+  font-size: 20px;
+  color: rgb(255, 250, 234);
+  background-color: yellowgreen;
+}
+
+#songCow {
+  width: 100px;
+  height: 100px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 7px;
+  right: 7px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lola Cow</title>
+    <link href='https://fonts.googleapis.com/css?family=Crafty Girls' rel='stylesheet'>
+    <link rel='stylesheet' type='text/css' href='./css/winner.css'>
+</head>
+
+<body>
+    <audio autoplay loop id="song">
+        <source src="./assets/sounds/TheCowSong.mp3" type="audio/mp3">
+    </audio>
+    <img src="./assets/images/cute-cow-bg.png" id="songCow" onclick="playSong()">
+    <div class='container'>
+        <div class='menu'>
+            <p>Winner</p>
+            <p id='score'>Score : </p>
+            <button class='menuBtn' onclick ="window.location = 'level.html';">Play Again</button>
+            <button class='menuBtn' onclick="window.location = 'menu.html';">Menu</button>
+        </div>
+        <img src='./assets/images/1534825178_AW422225_06.gif'>
+    </div>
+    <script>
+        var audio = document.getElementById("song");
+        function playSong() {
+            return audio.paused ? audio.play() : audio.pause();
+        }
+
+        var score = document.getElementById('score');
+        const user = localStorage.getItem('username');
+        const users = JSON.parse(localStorage.getItem('users'));
+        for (var i = 0; i < users.length; i++) {
+            if (users[i].username == user) {
+                score.innerHTML += users[i].currentScore;
+                break;
+            }
+        }
+
+    </script>
+</body>
+
+</html>

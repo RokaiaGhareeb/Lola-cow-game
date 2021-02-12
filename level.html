@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Lola Cow</title>
+  <link href='https://fonts.googleapis.com/css?family=Crafty Girls' rel='stylesheet'>
+  <link rel="stylesheet" href="./css/levels.css">
+  </link>
+</head>
+
+<body>
+  <audio autoplay loop id="song">
+    <source src="./assets/sounds/TheCowSong.mp3" type="audio/mp3">
+  </audio>
+  <div id='menubar'>
+    <div id='lives'>
+      <img class='live' src='./assets/images/livecow.png'>
+      <img class='live' src='./assets/images/livecow.png'>
+      <img class='live' src='./assets/images/livecow.png'>
+    </div>
+    <div style="text-align: center; width: fit-content;">
+      <p id='username'></p>
+      <p id='score'>0</p>
+    </div>
+    <img src="./assets/images/cute-cow-bg.png" id="songCow" onclick="playSong()">
+  </div>
+  <!-- <center>
+    <img id='loseimg' src='./assets/images/cattle-clipart-animation-18.gif'>
+  </center> -->
+  <div id="farm">
+    <div class="grid">
+      <div class="cow"></div>
+    </div>
+  </div>
+  <script src="./js/level.js" charset="utf-8"></script>
+</body>
+
+</html>

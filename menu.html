@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Lola Cow</title>
+  <link href='https://fonts.googleapis.com/css?family=Crafty Girls' rel='stylesheet'>
+  <link rel="stylesheet" href="./css/menu.css">
+  </link>
+</head>
+
+<body>
+  <audio autoplay loop id="song">
+    <source  src="./assets/sounds/TheCowSong.mp3" type="audio/mp3">
+</audio>
+<img src="./assets/images/cute-cow-bg.png" id="songCow" onclick="playSong()">
+
+<div class="container">
+    <div id='menu' class='menu'>
+        <button id="newGameBtn" class = 'menuBtn' onclick="newGame()">New Game</button>
+        <button id="htpBtn" class = 'menuBtn' onclick="about()">How To Play</button>
+        <button id="scoreBtn" class = 'menuBtn' onclick="score()">Score</button>
+        <button id="exitBtn" class = 'menuBtn' onclick="exit()">Exit</button>
+    </div>
+    <img id="imgCow" src="./assets/images/12398813-removebg-preview.png">
+</div>
+<script src="./js/menu.js"></script>
+</body>
+
+</html>

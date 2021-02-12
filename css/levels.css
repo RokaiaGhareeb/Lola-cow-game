@@ -1,0 +1,88 @@
+.cow {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    background-image: url(../assets/images/tenorcow.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    bottom: 0px;
+  }
+  
+  .obstacle {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-image: url(../assets/images/stone-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 0px;
+  }
+
+  .coin {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-image: url(../assets/images/dollar_53876-25498-removebg-preview.png);
+    background-size: contain;
+    bottom: 0px;
+  }
+  
+  @keyframes slideright {
+    from {
+        background-position: 70000%;
+    }
+    to {
+        background-position: 0%;
+    }
+  }
+  
+  @-webkit-keyframes slideright {
+    from {
+        background-position: 70000%;
+    }
+    to {
+        background-position: 0%;
+    }
+  }
+  
+  #farm {
+    position: absolute;
+    bottom: 0px;
+    background-image: url('../assets/images/green-grass-isolated-white_87394-705-removebg-preview.png');
+    background-repeat: repeat-x;
+    animation: slideright 3000s infinite linear;
+    -webkit-animation: slideright 3000s infinite linear;
+    width: 100%;
+    height: 200px;
+  }
+
+  #menubar{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  #score, #username{
+    color: yellowgreen;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Crafty Girls";
+  }
+  
+  .live{
+    width: 100px;
+    height: 100px;
+  }
+
+  #loseimg{
+    display: none;
+  }
+
+  #songCow {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+  }
+  

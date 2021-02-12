@@ -1,0 +1,68 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  background-image: url("../assets/images/green-grass-isolated-white_87394-705-removebg-preview.png");
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-size: 40%;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+#imgCow {
+  position: absolute;
+  left: 260px;
+  bottom: 30px;
+  width: 300px;
+  height: 250px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 500px;
+  height: 300px;
+  background-color: yellowgreen;
+  /* border-radius: 30px; */
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.menuBtn {
+  background-color: rgb(255, 250, 234);
+  width: 200px;
+  height: 40px;
+  color: yellowgreen;
+  font-size: 28px;
+  font-weight: bold;
+  border: 0;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  outline: none;
+  font-family: "Crafty Girls";
+  cursor: pointer;
+}
+
+#songCow {
+  width: 100px;
+  height: 100px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 7px;
+  right:7px;
+}

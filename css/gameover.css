@@ -1,0 +1,58 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  background-image: url("../assets/images/green-grass-isolated-white_87394-705-removebg-preview.png");
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-size: 40%;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+
+img {
+  height: 350px;
+  width: 400px;
+}
+
+p {
+  color: yellowgreen;
+  font-family: "Crafty Girls";
+  font-size: 60px;
+  font-weight: bold;
+}
+
+#backBtn {
+  background-color: yellowgreen;
+  width: fit-content;
+  height: 40px;
+  color: rgb(255, 250, 234);
+  font-size: 28px;
+  font-weight: bold;
+  border: 0;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  outline: none;
+  font-family: "Crafty Girls";
+  cursor: pointer;
+  margin: 10px;
+}
+
+#go{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
